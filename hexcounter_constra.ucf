@@ -1,0 +1,24 @@
+#Implementation constrains file for hexadecimal counter
+#XILINX Spartan 6 Mini SP6 V2 FPGA
+# FPGAtechsolution
+
+#reset push button
+NET rst LOC = P17 | IOSTANDARD = LVCMOS33; 
+
+#developed by Ninad Waingankar
+
+#12 mhz clock input
+NET clk LOC = P87 | IOSTANDARD = LVCMOS33; 
+
+#Counter output on7 seg display
+
+#MSB (6) to LSB (0) abcdefg format
+
+#digit1 
+NET hex(6) LOC = P22 | IOSTANDARD = LVCMOS33;
+NET hex(5) LOC = P21 | IOSTANDARD = LVCMOS33;
+NET hex(4) LOC = P24 | IOSTANDARD = LVCMOS33;
+NET hex(3) LOC = P23 | IOSTANDARD = LVCMOS33;
+NET hex(2) LOC = P27 | IOSTANDARD = LVCMOS33;
+NET hex(1) LOC = P26 | IOSTANDARD = LVCMOS33;
+NET hex(0) LOC = P30 | IOSTANDARD = LVCMOS33; 
